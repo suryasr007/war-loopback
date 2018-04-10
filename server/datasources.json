@@ -1,12 +1,12 @@
 {
   "db": {
-    "host": "d-opsauto-svr01.jnpr.net",
+    "host": "13.126.172.182",
     "port": 3306,
     "url": "",
     "database": "test",
-    "password": "test",
+    "password": "WAR4u",
     "name": "db",
-    "user": "test",
+    "user": "war",
     "connector": "mysql"
   }
 }
