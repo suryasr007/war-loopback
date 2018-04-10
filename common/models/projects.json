@@ -8,7 +8,10 @@
   "properties": {
     "title": {
       "type": "string",
-      "required": true
+      "required": true,
+      "index": {
+        "unique": true
+      }
     },
     "tags": {
       "type": "string"
@@ -21,9 +24,6 @@
       "type": "string",
       "dataType": "longtext"
     },
-    "author": {
-      "type": "string"
-    },
     "updated": {
       "type": "date",
       "required": true,
@@ -32,10 +32,13 @@
   },
   "validations": [],
   "relations": {
-    "id": {
+    "author": {
       "type": "belongsTo",
       "model": "User",
-      "foreignKey": "authorId"
+      "foreignKey": "id",
+      "options": {
+        "nestRemoting": true
+      }
     }
   },
   "acls": [],
