@@ -1,0 +1,12 @@
+{
+  "db": {
+    "host": "d-opsauto-svr01.jnpr.net",
+    "port": 3306,
+    "url": "",
+    "database": "test",
+    "password": "test",
+    "name": "db",
+    "user": "test",
+    "connector": "mysql"
+  }
+}

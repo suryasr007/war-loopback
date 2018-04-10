@@ -1,0 +1,41 @@
+{
+  "name": "workshops",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "tags": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string",
+      "dataType": "longtext"
+    },
+    "image": {
+      "type": "string",
+      "dataType": "longtext"
+    },
+    "from_date": {
+      "type": "date",
+      "required": true
+    },
+    "to_date": {
+      "type": "date"
+    },
+    "updated": {
+      "type": "date",
+      "required": true,
+      "dataType": "timestamp"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

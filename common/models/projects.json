@@ -1,0 +1,43 @@
+{
+  "name": "projects",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "tags": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string",
+      "dataType": "longtext"
+    },
+    "image": {
+      "type": "string",
+      "dataType": "longtext"
+    },
+    "author": {
+      "type": "string"
+    },
+    "updated": {
+      "type": "date",
+      "required": true,
+      "dataType": "timestamp"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "id": {
+      "type": "belongsTo",
+      "model": "User",
+      "foreignKey": "authorId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
