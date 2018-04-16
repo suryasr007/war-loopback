@@ -1,12 +1,12 @@
 {
   "db": {
-    "host": "13.126.172.182",
+    "host": "XXXXXXXXXX",
     "port": 3306,
     "url": "",
     "database": "test",
-    "password": "WAR4u",
+    "password": "XXXX",
     "name": "db",
-    "user": "war",
+    "user": "XXXXX",
     "connector": "mysql"
   }
 }
